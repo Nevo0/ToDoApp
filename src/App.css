@@ -1,7 +1,7 @@
 .done {
-  color: green;
+  color: #fb9;
   text-decoration: line-through;
-  text-decoration-color: red;
+  text-decoration-color: rgb(245, 61, 230);
 }
 
 .App {
