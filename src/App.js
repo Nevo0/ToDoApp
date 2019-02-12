@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import ToDoList from "./components/ToDoList";
+import "./App.css";
 
 class App extends Component {
+  myTasks = [
+    { done: false, text: "zagrac w wiedzmina" },
+    { done: false, text: "Spacer" },
+    { done: false, text: "trening" },
+    { done: true, text: "zagrac w wiedzmina3" },
+    { done: false, text: "lorem" },
+    { done: false, text: "ipsum" }
+  ];
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <ToDoList title="My staff" tasks={this.myTasks} />
       </div>
     );
   }
