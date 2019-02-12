@@ -16,7 +16,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ToDoList title="My staff" tasks={this.myTasks} />
+        <ToDoList
+          title="My staff"
+          tasks={this.myTasks}
+          done={this.myTasks.done}
+        />
       </div>
     );
   }
