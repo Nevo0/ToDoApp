@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #1f2425;
+  background: hsl(180, 2%, 39%);
   color: #bbb
 }
 
@@ -10,12 +10,4 @@ code {
     monospace;
 }
 
-.test {
-  background: #2b2e39;
-  margin: 0 ayti;
-  width: 80%;
-  max-width: 600px;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 10px
-}
+.test {}

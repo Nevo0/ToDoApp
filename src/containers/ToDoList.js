@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import ToDoItem from "../components/ToDoItem/";
 import NewTOdoForm from "../components/NewTOdoForm/";
-import styled from "styled-components";
 
+import styled from "styled-components";
+// styled-components
 const Container = styled.div`
   background: #2b2e39;
-  margin: 0 ayti;
+  margin: 0 auto;
   width: 80%;
   max-width: 600px;
   padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
+`;
+// styled-components
+const Header = styled.h1`
+  color: #fff;
 `;
 
 class ToDoList extends Component {
@@ -23,7 +28,7 @@ class ToDoList extends Component {
       { done: false, text: "lorem" },
       { done: false, text: "ipsum" }
     ],
-    title: "To  do  APP"
+    title: "To do APP1"
   };
 
   state = {
@@ -53,8 +58,8 @@ class ToDoList extends Component {
     // console.log(this.state.draft);
 
     return (
-      <div>
-        <h1>{this.props.title}</h1>
+      <Container>
+        <Header>{this.props.title}</Header>
 
         {this.state.tasks.map((task, index) => (
           <ToDoItem key={index} task={task} />
@@ -66,7 +71,7 @@ class ToDoList extends Component {
           onChange={this.updateDraft}
           draft={this.state.draft}
         />
-      </div>
+      </Container>
     );
   }
 }
