@@ -28,7 +28,7 @@ class ToDoList extends Component {
       { done: false, text: "lorem" },
       { done: false, text: "ipsum" }
     ],
-    title: "To do APP1"
+    title: "To do APP"
   };
 
   state = {
