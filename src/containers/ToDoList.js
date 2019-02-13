@@ -3,6 +3,16 @@ import ToDoItem from "../components/ToDoItem/";
 import NewTOdoForm from "../components/NewTOdoForm/";
 import styled from "styled-components";
 
+const Container = styled.div`
+  background: #2b2e39;
+  margin: 0 ayti;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+`;
+
 class ToDoList extends Component {
   static defaultProps = {
     tasks: [

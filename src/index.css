@@ -9,3 +9,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.test {
+  background: #2b2e39;
+  margin: 0 ayti;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px
+}
